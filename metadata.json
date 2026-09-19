@@ -1,0 +1,6 @@
+{
+  "name": "Block Tech Agencia",
+  "description": "Audio e Inteligencia Artificial con voz humana - Block Tech Agencia Studio, Agentes y API",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
