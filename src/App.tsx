@@ -1219,7 +1219,7 @@ export default function App() {
                 </a>
               </p>
 
-              <form onSubmit={(e) => { e.preventDefault(); alert('¡Gracias por contactar a Block Tech Agencia! Te responderemos muy pronto.'); setShowContact(false); }} className="space-y-4">
+              <form onSubmit={(e) => { e.preventDefault(); if (window.gtag) window.gtag('event', 'generate_lead', { form_name: 'contacto' }); alert('¡Gracias por contactar a Block Tech Agencia! Te responderemos muy pronto.'); setShowContact(false); }} className="space-y-4">
                 <div>
                   <label className="block text-xs font-semibold text-zinc-700 mb-1">Nombre Completo</label>
                   <input type="text" required placeholder="Tu nombre" className="w-full border border-zinc-300 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-black" />
@@ -1263,7 +1263,7 @@ export default function App() {
                 </a>
               </p>
 
-              <form onSubmit={(e) => { e.preventDefault(); alert('Consulta recibida. Un asesor de Block Tech Agencia se pondrá en contacto pronto.'); setShowContactSales(false); }} className="space-y-4">
+              <form onSubmit={(e) => { e.preventDefault(); if (window.gtag) window.gtag('event', 'generate_lead', { form_name: 'ventas' }); alert('Consulta recibida. Un asesor de Block Tech Agencia se pondrá en contacto pronto.'); setShowContactSales(false); }} className="space-y-4">
                 <div>
                   <label className="block text-xs font-semibold text-zinc-700 mb-1">Nombre Completo</label>
                   <input type="text" required placeholder="Nombre" className="w-full border border-zinc-300 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-black" />
